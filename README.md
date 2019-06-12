@@ -1,9 +1,20 @@
+## What this is
+This is a starter repo utilizing, React, Typescript, Redux, Thunk, Material UI, and JSS. Specifically, it uses best practice for styling, handling asynchronous requests, loading, and error handling. Basically, it gives you examples on how to do stuff that would take a LONG time to figure out the hard way. Try and follow all the existing patterns in this repo, and your code base will be much better!
+
+The logic for "Incrementer" is very simple synchronous Redux. The logic for "Cat Facts" is a little more complex, and will show you how to handle loading, error handling, and asynchronous requests.
+
+It is forked from createReactApp, so I am putting the rest of THEIR readme below.
+
+
+
+## Create React App Readme
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
-## Table of Contents
+
 
 - [Updating to New Releases](#updating-to-new-releases)
 - [Sending Feedback](#sending-feedback)
