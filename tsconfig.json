@@ -17,7 +17,11 @@
     "importHelpers": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true
+
+    "noUnusedLocals": false,
+
+    // disabling skip lib check speeds up the compilation time
+    "skipLibCheck": true,
   },
   "exclude": [
     "node_modules",

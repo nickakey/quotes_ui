@@ -1,11 +1,18 @@
+// ------------------------------------------------------------------------------
+// Node Modules ----------------------------------------------------------------
 import * as React from 'react';
-import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { withStyles, WithStyles } from '@material-ui/core/styles';
+// ------------------------------------------------------------------------------
+// Material UI Components ----------------------------------------------------------------
 
-import store from '../../Redux/store'
+// ------------------------------------------------------------------------------
+// Local Components ----------------------------------------------------------------
+import store from '../../Redux/store';
 import Home from '../Home/Home';
 import Header from '../Header/Header';
+// ----------------------------------------------------------------
 
 class App extends React.Component {
   render() {
