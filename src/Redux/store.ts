@@ -3,14 +3,20 @@ import thunk from 'redux-thunk';
 const middleware = [thunk];
 
 import rootReducer from './reducers';
-import { CatFactType } from '../types';
+import { QuoteType } from '../types';
 
 export const defaultState = {
-  catFactsReducer: {
+  quotesReducer: {
     count: 0,
-    error: '',
-    isFetching: false,
-    catFacts: [] as CatFactType[],
+    fetchQuotes: {
+      error: '',
+      isFetching: false,
+    },
+    postQuotes: {
+      error: '',
+      isFetching: false,
+    },
+    quotes: [] as QuoteType[],
   },
 };
 

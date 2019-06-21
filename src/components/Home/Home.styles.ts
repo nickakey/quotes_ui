@@ -10,7 +10,7 @@ import { createStyles, Theme } from '@material-ui/core/styles';
 
 export default (theme: Theme) =>
   createStyles({
-    catFact: {
+    quote: {
       padding: '.4em',
       margin: '.4em',
       border: `solid ${theme.palette.primary.main} 1px`,
@@ -28,7 +28,7 @@ export default (theme: Theme) =>
         margin: '0em 1em',
       },
     },
-    catFactsContainer: {
+    quotesContainer: {
       margin: '1em',
     },
     description: {

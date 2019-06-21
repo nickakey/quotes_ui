@@ -1,21 +1,20 @@
-import { CatFactType } from '../types';
+import { QuoteType } from '../types';
 import axios from 'axios';
-import catFacts from '../assets/catFacts';
 
-export async function networkFetchCatFacts(): Promise<CatFactType[]> {
-  await delayOrError();
-  return catFacts;
+export async function networkFetchQuotes(): Promise<QuoteType[]> {
+  const response = await axios.get('http://localhost:8000/quotes');
+  return response.data;
 }
 
-function delayOrError() {
-  // useful for testing purposes, to simulate handing loading and error handling of network requests
-  return new Promise((resolve, reject) => {
-    const delay = 1500;
-    setTimeout(() => {
-      if (Math.random() > 0.5) {
-        return reject('the request has failed!!');
-      }
-      resolve();
-    }, delay);
+export async function networkPostQuote(text: string, author: string): Promise<QuoteType> {
+  const response = await axios.post('http://localhost:8000/quotes/', {
+    text,
+    author,
   });
+  return response.data;
+}
+
+export async function networkDeleteQuote(id: number): Promise<QuoteType> {
+  const response = await axios.delete(`http://localhost:8000/quotes/${id}/`);
+  return response.data;
 }
